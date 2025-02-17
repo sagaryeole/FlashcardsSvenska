@@ -1,0 +1,21 @@
+    [
+            {"question": "ska", "answer": "shall"},
+            {"question": "har", "answer": "has"},
+            {"question": "kan", "answer": "can"},
+            {"question": "måste", "answer": "must"},
+            {"question": "skall", "answer": "shall"},
+            {"question": "har", "answer": "has"},
+            {"question": "är", "answer": "is"},
+            {"question": "var", "answer": "was"},
+            {"question": "blir", "answer": "becomes"},
+            {"question": "blev", "answer": "became"},
+            {"question": "kommer", "answer": "comes"},
+            {"question": "kom", "answer": "came"},
+            {"question": "går", "answer": "goes"},
+            {"question": "gick", "answer": "went"},
+            {"question": "får", "answer": "gets"},
+            {"question": "fick", "answer": "got"},
+            {"question": "vill", "answer": "wants"},
+            {"question": "ville", "answer": "wanted"}
+    ]
+    
