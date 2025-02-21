@@ -1,0 +1,21 @@
+    [
+            {"question": "ska", "answer": "shall","question_language": "Swedish", "answer_language": "English"},
+            {"question": "har", "answer": "has","question_language": "Swedish", "answer_language": "English"},
+            {"question": "kan", "answer": "can","question_language": "Swedish", "answer_language": "English"},
+            {"question": "måste", "answer": "must","question_language": "Swedish", "answer_language": "English"},
+            {"question": "skall", "answer": "shall","question_language": "Swedish", "answer_language": "English"},
+            {"question": "har", "answer": "has","question_language": "Swedish", "answer_language": "English"},
+            {"question": "är", "answer": "is","question_language": "Swedish", "answer_language": "English"},
+            {"question": "var", "answer": "was","question_language": "Swedish", "answer_language": "English"},
+            {"question": "blir", "answer": "becomes","question_language": "Swedish", "answer_language": "English"},
+            {"question": "blev", "answer": "became","question_language": "Swedish", "answer_language": "English"},
+            {"question": "kommer", "answer": "comes","question_language": "Swedish", "answer_language": "English"},
+            {"question": "kom", "answer": "came","question_language": "Swedish", "answer_language": "English"},
+            {"question": "går", "answer": "goes","question_language": "Swedish", "answer_language": "English"},
+            {"question": "gick", "answer": "went","question_language": "Swedish", "answer_language": "English"},
+            {"question": "får", "answer": "gets","question_language": "Swedish", "answer_language": "English"},
+            {"question": "fick", "answer": "got","question_language": "Swedish", "answer_language": "English"},
+            {"question": "vill", "answer": "wants","question_language": "Swedish", "answer_language": "English"},
+            {"question": "ville", "answer": "wanted","question_language": "Swedish", "answer_language": "English"}
+    ]
+    

@@ -1,0 +1,21 @@
+[
+    {"question": "shall", "answer": "ska","question_language": "English", "answer_language": "Swedish"},
+    {"question": "has", "answer": "har","question_language": "English", "answer_language": "Swedish"},
+    {"question": "can", "answer": "kan","question_language": "English", "answer_language": "Swedish"},
+    {"question": "must", "answer": "måste","question_language": "English", "answer_language": "Swedish"},
+    {"question": "shall", "answer": "skall","question_language": "English", "answer_language": "Swedish"},
+    {"question": "has", "answer": "har","question_language": "English", "answer_language": "Swedish"},
+    {"question": "is", "answer": "är","question_language": "English", "answer_language": "Swedish"},
+    {"question": "was", "answer": "var","question_language": "English", "answer_language": "Swedish"},
+    {"question": "becomes", "answer": "blir","question_language": "English", "answer_language": "Swedish"},
+    {"question": "became", "answer": "blev","question_language": "English", "answer_language": "Swedish"},
+    {"question": "comes", "answer": "kommer","question_language": "English", "answer_language": "Swedish"},
+    {"question": "came", "answer": "kom","question_language": "English", "answer_language": "Swedish"},
+    {"question": "goes", "answer": "går","question_language": "English", "answer_language": "Swedish"},
+    {"question": "went", "answer": "gick","question_language": "English", "answer_language": "Swedish"},
+    {"question": "gets", "answer": "får","question_language": "English", "answer_language": "Swedish"},
+    {"question": "got", "answer": "fick","question_language": "English", "answer_language": "Swedish"},
+    {"question": "wants", "answer": "vill","question_language": "English", "answer_language": "Swedish"},
+    {"question": "wanted", "answer": "ville","question_language": "English", "answer_language": "Swedish"}
+]
+
