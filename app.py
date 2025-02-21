@@ -5,7 +5,8 @@ import os
 
 app = Flask(__name__)
 
-flashcards_file = os.path.join(os.getcwd(), 'data', 'plural.json')
+language = "Swedish"
+flashcards_file = os.path.join(os.getcwd(), 'data' , language , 'vocabulary.json')
 
 # Load flashcards from JSON file
 def load_flashcards(flashcards_file):
@@ -19,16 +20,19 @@ flashcards_lock = threading.Lock()
 
 @app.route('/')
 def index():
-    return render_template('index.html', flashcards=flashcards)
+    return render_template('index.html', flashcards=flashcards, language=language)
 
 @app.route('/get_flashcards', methods=['GET'])
 def get_flashcards():
     topic = request.args.get('topic')
-    if not topic:
-        return jsonify({"error": "No topic provided"}), 400
+    if topic is None or topic == "":
+        topic = 'vocabulary'
+        
+    language = request.args.get('language')
+    if language is None or language == "":
+        language= 'Swedish'
 
-    flashcards_file = os.path.join(os.getcwd(), 'data', f'{topic}.json')
-    print   (flashcards_file)   
+    flashcards_file = os.path.join(os.getcwd(), 'data',language, f'{topic}.json')
     flashcards = load_flashcards(flashcards_file)
     return jsonify(flashcards)
 
