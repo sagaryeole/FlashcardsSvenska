@@ -2,9 +2,18 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#flashcard-container {
+    width: 50%;
+    /* border: 1px solid #ccc; */
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    /* align-items: center; */
+}
+
 #add-flashcard {
     width: 100%;
-    max-width: 600px;
+    /* max-width: 600px; */
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -15,9 +24,9 @@ body {
 }
 
 #flashcard {
-    width: 100%;
-    max-width: 600px;
-    height: 100px;
+    /* width: 60%; */
+    /* max-width: 600px; */
+    height: 140px;
     margin-bottom: 20px;
     padding: 20px;
     /* border: 1px solid #b9dbb3; */
@@ -25,39 +34,42 @@ body {
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     background-color: #ffffff;
     cursor: pointer;
-    perspective: 1000px; /* Add perspective for 3D effect */
+    perspective: 1000px;
+    /* Add perspective for 3D effect */
 }
 
 #flashcard-inner {
     position: relative;
-    width: 100%;
-    height: 100%;
+    /* width: 60%; */
+    height: 140%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     text-align: center;
     vertical-align: middle;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow effect */
 }
 
 #flashcard.flipped #flashcard-inner {
     transform: rotateY(180deg);
 }
 
-#flashcard-front{
+#flashcard-front {
     background-color: #ffffff;
 }
 
-#flashcard-front, #flashcard-back {
+#flashcard-front,
+#flashcard-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    font-size: xx-large;
+    font-size: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-transform: capitalize; 
+    text-transform: capitalize;
 }
 
 #flashcard-back {
@@ -65,13 +77,32 @@ body {
     background-color: #b6ecaf;
 }
 
-#flashcard-buttons
-{
+#flashcard-buttons {
     width: 100%;
-    max-width: 600px;
+    /* max-width: 600px; */
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+#dropdown-box {
+    text-align: left;
+    padding-left: 10px;
+    position: relative;
+}
+
+#languages {
+    text-align: right;
+    padding-right: 10px;
+    position: relative;
+}
+
+#click-config {
+    text-align: right;
+    padding-right: 10px;
+    position: relative;
 }
 
 button {
@@ -83,15 +114,23 @@ button {
     cursor: pointer;
 }
 
-#load-flashcards {
-    background-color: #6366f1;
+#progress {
+    font-size: 12px;
+    color: #4b5563;
+    text-align: right;
+    /* max-width: 600px; */
+    padding-right: 10px;
 }
 
 #topic {
-    font-size: 24px;
+    font-size: 16px;
     color: #4b5563;
     margin-bottom: 20px;
     padding-right: 5px;
+}
+
+#mute-sound{
+    color: #2196F3;
 }
 
 button:disabled {
@@ -113,18 +152,68 @@ button:hover:not(:disabled) {
 }
 
 @media (max-width: 768px) {
-    #flashcard, #add-flashcard {
+
+    #flashcard,
+    #add-flashcard {
         padding: 15px;
     }
+
     button {
         padding: 8px 16px;
         font-size: 14px;
     }
 }
 
-#progress {
-    font-size: 18px;
-    color: #4b5563;
-    text-align: right;
-    max-width: 600px;
+/* Toggle Switch CSS */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(24px);
+}
+
+.slider.round {
+    border-radius: 22px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
